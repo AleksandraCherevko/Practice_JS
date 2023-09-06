@@ -393,18 +393,196 @@
 // Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины 
 // в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
 
-function getCommonElements(array1, array2) {
+// function getCommonElements(array1, array2) {
 
-  const newArray = [ ];
-  for (i=0; i < array1.length; i +=1){
-    if (array2.includes(array1[i])){
-       newArray.push(array1[i]);
-    }
-  }
-  return newArray;
-  }
+//   const newArray = [ ];
+//   for (i=0; i < array1.length; i +=1){
+//     if (array2.includes(array1[i])){
+//        newArray.push(array1[i]);
+//     }
+//   }
+//   return newArray;
+//   }
 
 
 
-  console.log(getCommonElements([1, 2, 3], [2, 4]));
-  console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+//   console.log(getCommonElements([1, 2, 3], [2, 4]));
+//   console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+
+// Задача 26/32
+// Выполни рефакторинг кода функции calculateTotalPrice(order) заменив цикл for на for...of.
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+
+
+//   return total;
+// }
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+// for (let value of order){
+//   total += value;
+// }
+// return total;
+// }
+
+//   console.log(calculateTotalPrice([12, 85, 37, 4]));
+//   console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// // Задача 27/32
+// Выполни рефакторинг функции filterArray(numbers, value) заменив цикл for на for...of.
+
+// function filterArray(numbers, value) {
+
+//   const filteredNumbers = [];
+
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     const number = numbers[i];
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+
+// }
+
+
+// function filterArray(numbers, value){
+//   const filteredNumbers = [ ];
+
+//   for (let number of numbers){
+//     if (number > value){
+//       filteredNumbers.push(number);
+//     }
+//   }
+//     return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// Задача 28/32
+// Дополни выражения остатка от деления так, чтобы код проходил тесты.
+
+// const a = 3 % 1;
+// console.log(a);
+
+// const b = 4 % 3;
+// console.log(b);
+
+
+// const c = 11 % 4;
+// console.log(c);
+
+// const d = 12 % 7;
+// console.log(d);
+
+// const e = 8 % 3;
+// console.log(e);
+
+// Задача 29/32
+// Напиши функцию getEvenNumbers(start, end) 
+// которая возвращает массив всех чётных чисел от start до end.
+//  Чётным считается число которое делится на 2 без остатка (10 % 2 === 0).
+
+// function getEvenNumbers(start, end) {
+
+//   const newArray = [];
+
+//   for (let i = start; i <=end; i+= 1){
+//     if (i % 2 === 0 ){
+//      newArray.push(i);
+//     }
+//   }
+
+//   return newArray;
+//  }
+
+//  console.log(getEvenNumbers(2, 5));
+//  console.log(getEvenNumbers(6, 12));
+
+
+// Задача 30/32
+// Дополни код так, чтобы в переменную number записывалось первое число от start до end, которое делится на 5 без остатка.
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+
+// console.log(number);
+
+// Задача 31/32
+// Выполни рефакторинг функции findNumber(start, end, divisor) так, чтобы она:
+
+// возвращала первое число от start до end, которое делится на divisor без остатка
+// не использовала оператор break
+// не использовала переменную number
+
+// function findNumber(start, end, divisor) {
+
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       break;
+//     }
+//   }
+
+//   return number;
+
+// }
+
+// function findNumber(start, end, divisor) {
+
+//   let number;
+//   for (let i = start; i <= end; i +=1){
+
+//   if (i  % divisor === 0){
+
+//       return i;}
+//   }
+//   }
+
+
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+
+
+// Задача 32/32
+// Напиши функцию includes(array, value), которая делает тоже самое, что и метод массива массив.includes(значение) - 
+// проверяет, есть ли в массиве array значение value, возвращая true если есть и false в противном случае.
+
+// При выполнении этой задачи в теле функции includes() нельзя использовать метод массив.includes(значение).
+
+// function includes(array, value) {
+
+// for (const item of array){
+//   if (item === value) {
+//     return true;
+//   }
+// } 
+
+//   return false
+
+// }
+
+
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
