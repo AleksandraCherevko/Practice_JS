@@ -160,12 +160,12 @@
 
 // задача - передать массив всех имен 
 
-const friends = [
-{name: 'Mango', online: false},
-{name: 'Kiwi', online: true},
-{name: 'Poly', online: true},
-{name: 'Ajax', online: false},
-];
+// const friends = [
+// {name: 'Mango', online: false},
+// {name: 'Kiwi', online: true},
+// {name: 'Poly', online: true},
+// {name: 'Ajax', online: false},
+// ];
 
 
 // console.table(friends);
@@ -218,5 +218,147 @@ const friends = [
 
 // console.log(getOfflineFriends(friends));
 
-// в разный масив перенести объекты: те, кто онлайн в массив - онлайн. те, кто оффлайн - в массив оффлайн
 
+
+// const number = 'AH47758AM'
+
+// const car = {
+// // wheels: 4,
+// mark: 'ford',
+// model: 'ford mandeo',
+// number,
+// isFromUSA:true,
+// }
+
+// car.wheels = 14;
+// car.isFromUAS = false;
+// console.log(car);
+
+// const key = 'wheels';
+// car[key] = 4;
+// console.log(car);
+
+
+
+// написать функцию где сохраняются зарплаті всех зарплат
+// если объект саларис пустой, результат должен быть 0
+
+// const salaries = {
+//     Andrii: 3000,
+//     Anna: 1200,
+//     Sofa: 2632.
+// };
+
+// function getResult(salariesData){
+// const values = Object.values(salariesData);
+
+// let totalSum=0;
+// for (let value of values){
+
+// totalSum += value;
+
+// }
+// return totalSum;
+// }
+
+// console.log(getResult(salaries));
+
+
+// написать функицию которая принимает массив объекта и рядок с названием камня/ функция считает и возвращает общую стоимость камней с именем stoneName
+
+// const stones = [
+//     { name: 'Смарагд', price:1300, quantity: 4},
+//     { name: 'Діамант', price: 2700, quantity: 3},
+//     { name: 'Сапфір', price: 400, quantity: 7},
+//     { name: 'Топаз', price: 500, quantity: 10},
+//     { name: 'Аквамарин', price: 200, quantity: 8},
+// ];
+
+// function calcTotalPrice (stonesList, stoneName){
+// for (let stone of stonesList){
+// if (stone.name.toLowerCase() === stoneName.toLowerCase()){
+//     return stone.price * stone.quantity;
+// }
+// }
+
+// return `${stoneName} not found`;
+// }
+
+// console.log(calcTotalPrice(stones, 'смарагд'));
+// console.log(calcTotalPrice(stones, 'dwdwdsw'));
+
+
+// 
+// const playlist = {
+//     name: 'My playlist',
+//     rating: 5,
+//     tracks: ['track-1', 'track-2', 'track-3'],
+//     trackCount:3,
+
+//     changeName(newName){
+//         console.log('this', this);
+//         this.name = newName;
+//     },
+
+//     addTrack(track){
+//         console.log('this', this);
+//         this.tracks=track;
+//     },
+
+//     updateRating(newRating){
+//     //    console.log('this', this);
+//     //    this.rating = newRating;
+
+//     this.rating = newRating;
+//     },
+// };
+// playlist.changeName('New name');
+// console.log(playlist);
+
+
+// playlist.addTrack('track-4');
+// console.log(playlist);
+
+// playlist.updateRating('16');
+// console.log(playlist);
+
+
+const friends = [
+    {name: 'Mango', online: false},
+    {name: 'Kiwi', online: true},
+    {name: 'Poly', online: true},
+    {name: 'Ajax', online: false},
+    ];
+
+// ищем по имени 
+    // const findFriendByName = function (allFriends, name){
+    //    for (const friend of allFriends){
+    //      console.log(friend);
+    //      console.log(friend.name);
+
+    //      if (friend.name ===  'Poly'){
+    //      return 'Find!';
+    //      }
+    //    }
+    // }
+
+    // console.log(findFriendByName(friends, 'Poly'));
+
+    // ищем друзей которые онлайн
+
+// const getOnlineFriends = function(allFriends){
+
+//     const onlineFriends = [];
+//     for (const friend of allFriends){
+//         console.log(friend);
+//         console.log(friend.online);
+
+//         if(friend.online){
+//             onlineFriends.push(friend);
+//         }
+//     }
+
+//     return onlineFriends;
+// };
+
+// console.log(getOnlineFriends(friends));
