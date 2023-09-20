@@ -323,12 +323,12 @@
 // console.log(playlist);
 
 
-const friends = [
-    {name: 'Mango', online: false},
-    {name: 'Kiwi', online: true},
-    {name: 'Poly', online: true},
-    {name: 'Ajax', online: false},
-    ];
+// const friends = [
+//     {name: 'Mango', online: false},
+//     {name: 'Kiwi', online: true},
+//     {name: 'Poly', online: true},
+//     {name: 'Ajax', online: false},
+//     ];
 
 // ищем по имени 
     // const findFriendByName = function (allFriends, name){
@@ -362,3 +362,59 @@ const friends = [
 // };
 
 // console.log(getOnlineFriends(friends));
+
+// spread - расспыление 
+
+// const a = {x:1, y:2};
+// const b = {x:0, z:3};
+
+// const c = {
+//     ...a, ...b,
+// };
+// console.log(c); 
+
+// значение одинаковой переменной заменяется сверху вниз 
+
+// дестроктуризация - нужен чтобы мы могли вызвать разные свойства одного объекта
+// playlist
+
+// const playlist = {
+//     name: `My playlist`,
+//     rating: 5,
+//     tracks: ['track-1', 'track-2', 'track-3'],
+//     trackCount:3,
+// }
+
+// const {rating, tracks, name, trackCount} = playlist;
+
+// console.log(rating);
+// console.log(tracks);
+// console.log(name);
+// console.log(trackCount);
+
+
+
+// 2
+
+// const profile = {
+//     name: "Sasha",
+//     age: 26,
+//     avatar: 'google.com',
+ 
+//     rating: {
+//         followers: 63737,
+//         views: 888,
+//         likes: 83837,
+//     },
+// };
+
+// const {
+//     name, 
+//     age, 
+//     avatar,
+//  rating: {followers, views, likes},
+// } = profile;
+
+// console.log(profile);
+
+

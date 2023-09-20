@@ -105,3 +105,28 @@
 
 // console.log(findSmallestNumber([5, 7, 2, 89, 4]));
 // console.log(findSmallestNumber([6, 3, 5, 62, -5]));
+
+
+// spread - распыление
+// const numbers = [...[1,2,3], ...[4, 5 ]];
+// console.log(numbers);
+
+
+// const temps = [15, 4,5,34,23,45,78];
+// console.log(Math.max(...temps));
+// console.log(Math.min(...temps));
+
+// const lastWeekTemp = [1,2,3];
+// const currentTemp = [4,5,6];
+// const nextWeek = [7,8,9];
+
+// const allTemps = [...lastWeekTemp, ...currentTemp, ...nextWeek];
+// console.log(allTemps);
+
+
+// /дестроктуризация
+
+// const rgb = [293, 995, 89];
+// const [red, green, blue] = rgb;
+
+// console.log(red, green, blue);
