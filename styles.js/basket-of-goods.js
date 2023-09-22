@@ -4,67 +4,67 @@
 // {name:'barry', price:110}
 
 
-const cart = {
-    items:[],
-    getItems(){
-    return this.items;
-    },
+// const cart = {
+//     items:[],
+//     getItems(){
+//     return this.items;
+//     },
 
-    add(product){
-     this.items.push(product);
-    },
+//     add(product){
+//      this.items.push(product);
+//     },
 
-    remove(productName){
-        const {items} = this;
-        for(let i=0; i<this.items.length; i+=1){
-          const { name } = items[i];
+//     remove(productName){
+//         const {items} = this;
+//         for(let i=0; i<this.items.length; i+=1){
+//           const { name } = items[i];
 
-            if (productName === name){
-                console.log(`Find product:`, productName);
-                console.table(i);
+//             if (productName === name){
+//                 console.log(`Find product:`, productName);
+//                 console.table(i);
 
-                items.splice(i, 1);
-            }
-        }
+//                 items.splice(i, 1);
+//             }
+//         }
 
-    },
+//     },
 
-    clear ( ){
-        this.items = [ ];
-    },
+//     clear ( ){
+//         this.items = [ ];
+//     },
 
-    countTotalPrice(){
-      const { items } = this;
+//     countTotalPrice(){
+//       const { items } = this;
 
-        let total = 0;
-        for (const { price } of items)
-        {
+//         let total = 0;
+//         for (const { price } of items)
+//         {
          
-            total += price;
+//             total += price;
 
-        }
+//         }
 
-        return total;
-    }
-};
-
-
-console.table(cart.getItems());
-
-cart.add({name:'apple', price: 50 });
-cart.add({name:'grape', price: 70});
-cart.add({name:'lime', price:60});
-cart.add({name:'barry', price:110});
-
-console.table(cart.getItems());
-console.log(`Total:`, cart.countTotalPrice());
-
-cart.remove('apple'); 
-console.table(cart.getItems());
+//         return total;
+//     }
+// };
 
 
-cart.clear();
-console.table(cart.getItems());
+// console.table(cart.getItems());
+
+// cart.add({name:'apple', price: 50 });
+// cart.add({name:'grape', price: 70});
+// cart.add({name:'lime', price:60});
+// cart.add({name:'barry', price:110});
+
+// console.table(cart.getItems());
+// console.log(`Total:`, cart.countTotalPrice());
+
+// cart.remove('apple'); 
+// console.table(cart.getItems());
+
+
+// cart.clear();
+// console.table(cart.getItems());
 
 
 
