@@ -535,3 +535,64 @@
 // console.log(worstScore);
 
 // Задача 30/41
+
+// В конструкторе можно создавать новые тесты, для которых есть настройки по умолчанию которые 
+// хранятся в переменной defaultSettings. Во время создания теста, 
+// все или часть настроек можно переопределить, они хранятся в переменной overrideSettings.
+
+// Для того чтобы получить финальные настройки теста, необходимо 
+// взять настройки по умолчанию и поверх них применить переопределённые настройки. 
+// Дополни код так, чтобы в переменной finalSettings получился объект финальных настроек теста.
+
+// const defaultSettings = {
+//     theme: "light",
+//     public: true,
+//     withPassword: false,
+//     minNumberOfQuestions: 10,
+//     timePerQuestion: 60,
+//   };
+//   const overrideSettings = {
+//     public: false,
+//     withPassword: true,
+//     timePerQuestion: 30,
+//   };
+
+//   const finalSettings = {...defaultSettings, ...overrideSettings};
+//   console.log(finalSettings);
+
+
+// Задача 31/41
+// Напиши функцию makeTask(data) которая принимает один параметр data - объект со следующими свойствами.
+
+// text - текст задачи.
+// category - категория задачи.
+// priority - приоритет задачи.
+// Функция должна составить и вернуть новый объект задачи, 
+// не изменяя напрямую параметр data. В новом объекте должно быть свойство completed, 
+// значение которого хранится в одноимённой локальной переменной.
+
+// В параметре data гарантированно будет только свойство text, а остальные два, 
+// category и priority, могут отсутствовать. Тогда, в новом объекте задачи, 
+// в свойствах category и priority должны быть значения по умолчанию, 
+// хранящиеся в одноимённых локальных переменных.
+
+// function makeTask(data) {
+//     const completed = false;
+//     const category = "General";
+//     const priority = "Normal";
+
+   
+//     return {
+//         category,
+//         priority,
+//         completed,
+//         ...data}
+
+// }
+
+
+// console.log(makeTask({category: "Homemade", priority: "Low", text: "Take out the trash" }));
+
+
+
+  
