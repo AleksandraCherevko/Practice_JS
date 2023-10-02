@@ -594,5 +594,149 @@
 // console.log(makeTask({category: "Homemade", priority: "Low", text: "Take out the trash" }));
 
 
+// Задача 32/41
+// Используя операцию rest дополни код функции add() так, 
+// чтобы она принимала любое количество аргументов, считала и возвращала их сумму.
+  
+// function add(...args) {
+// console.log(args);
+
+// let total = 0;
+
+// for (const arg of args){
+//     total += arg; 
+
+//   }
+
+//   return total;
+// }
+
+// console.log(add(74, 11, 62, 46, 12, 36));
+// console.log(add(15, 27));
+
+
+// Задача 33/41
+// Функция addOverNum() считает сумму всех аргументов. 
+// Измени параметры и тело функции addOverNum() так, 
+// чтобы она считала сумму только тех аргументов, 
+// которые больше чем заданное число. 
+// Это число должно быть первым параметром функции.
+
+// function addOverNum(firstArg, ...args) {
+//     let total = 0;
+  
+//     for (const arg of args) {
+// if(arg > firstArg)
+//     { 
+//         total += arg;
+//     }
+//  }
+  
+//     return total;
+ 
+//   }
+  
+//   console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+// Задача 34/41
+// Функция findMatches() принимает произвольное количество аргументов.
+// Первым аргументом всегда будет массив чисел, а остальные аргументы будут просто числами.
+
+// Дополни код функции так, чтобы она возвращала новый массив matches, 
+// в котором будут только те аргументы, начиная со второго, которые есть в массиве первого аргумента.
+
+// Например, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) должна вернуть массив [1, 2], 
+// потому что только они есть в массиве первого аргумента.
+
+// function findMatches(array,...rest) {
+//     const matches = [];
+//   for (const number of array){
+//     if(rest.includes(number)){
+//       matches.push(number)
+//     }
+
+//   }  return matches;
+// }
 
   
+
+//   console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+//   console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+
+// Задача 35/41
+// Добавь объекту bookShelf ещё два метода, которые пока что будут 
+// возвращать просто строки по аналогии с getBooks() и addBook(bookName).
+
+// Метод removeBook(bookName) будет удалять книгу по имени. 
+// Возвращает строку "Deleting book <имя книги>", где <имя книги> это значение параметра bookName.
+
+// Метод updateBook(oldName, newName) будет обновлять название книги на новое. 
+// Возвращает строку "Updating book <старое имя> to <новое имя>", 
+// где <старое имя> и <новое имя>это значения параметров oldName и newName соотвественно.
+
+// const bookShelf = {
+   
+//     books: ["The last kingdom", "The guardian of dreams"],
+//     getBooks() {
+//       return "Returning all books";
+//     },
+//     addBook(bookName) {
+//       return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName){
+//       return `Deleting book ${bookName}`;
+//     }, 
+//     updateBook(oldName, newName){
+//         return `Updating book ${oldName} to ${newName}`
+//     },
+
+//   };
+  
+//   console.log(bookShelf.removeBook("Red sunset"));
+//   console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+
+// Задача 36/41
+// Дополни метод updateBook(oldName, newName) так, 
+// чтобы он изменял название книги с oldName на newName в свойстве books. 
+// Используй indexOf() для того, чтобы найти нужный элемент массива, и splice() 
+// для того чтобы заменить этот элемент
+// const bookShelf = {
+//     books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//     updateBook(oldName, newName) {
+
+//   const oldBookIndex = 
+//     this.books.indexOf(oldName);
+//       this.books.splice(oldBookIndex, 1, newName)
+
+//     },
+//   };
+  
+
+//   console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+
+// Задача 37/41
+// К нам обратилась владелица лавки зелий «У старой жабы» 
+// и заказала программу для ведения инвентаря - добавления, удаления, поиска и обновления зелий. 
+// Добавь объекту atTheOldToad свойство potions, значением которого сделай пустой массив.
+// Добавь объекту atTheOldToad метод getPotions(), который просто возвращает значение свойства potions.
+// Дополни метод addPotion(potionName) так, 
+// чтобы он добавлял зелье potionName в конец массива зелий в свойстве potions.
+// Дополни метод removePotion(potionName) так, чтобы он удалял зелье potionName из массива зелий в свойстве potions.
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   getPotions(){
+//     return this.potions;
+//   }, 
+//   addPotion(potionName){
+//     this.potions.push(potionName);
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+//     this.potions.splice(potionIndex, 1);
+//   }
+//   };
+  
+
+//   console.log(atTheOldToad.addPotion("Invisibility"));
+//   console.log(atTheOldToad.addPotion("Power potion"));
