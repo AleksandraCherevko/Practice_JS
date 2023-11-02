@@ -1,16 +1,16 @@
-// const doMath = function (a, b, callback){
-// const result = callback(a, b);
+const doMath = function (a, b, callback){
+const result = callback(a, b);
 
-// console.log(result);
-// };
+console.log(result);
+};
 
-// const add = function (x, y){
-//     return x + y;
-// };
+const add = function (x, y){
+    return x + y;
+}
 
-// const sub = function (x, y){
-//     return x - y;
-// };
+const sub = function (x, y){
+    return x - y;
+};
 
-// doMath(2, 3, add);
-// doMath(12, 3, sub);
+doMath(2, 3, add);
+doMath(12, 3, sub);
