@@ -61,15 +61,52 @@
 // const lastValue = value.length;
 // console.log(value.slice(value.length - 1));
 
-// №9Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
+// №9 Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
 
-const number = 12499373;
-const value = number.toString();
-const firstNumber = value[0];
-console.log(firstNumber);
+// const number = 12499373;
+// const value = number.toString();
+// const firstNumber = value[0];
+// console.log(firstNumber);
 
-const lastNumber = value.slice(value.length - 1);
-console.log(lastNumber);
+// const lastNumber = value.slice(value.length - 1);
+// console.log(lastNumber);
 
-const theSum = Number.parseInt(firstNumber + lastNumber);
-console.log(theSum);
+// const theSum = parseInt(firstNumber) + parseInt(lastNumber);
+// console.log(theSum);
+
+// №10 Дано число. Выведите количество цифр в этом числе.
+
+// const num = 2365463561;
+// const value = num.toString();
+// console.log(value.length);
+
+// №11 Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
+
+// const numFirst = 2367216271;
+// const numSecond = 2514651456;
+
+// const valueFirst = numFirst.toString();
+// const valueSecond = numSecond.toString();
+
+// if (valueFirst[0] === valueSecond[0]) {
+//   message = "совпадают";
+// } else {
+//   message = "несовпадают";
+// }
+
+// console.log(message);
+
+// №12 Дана строка. Если в этой строке более одного символа, выведите в консоль предпоследний символ этой строки.
+// const string = "huyuyythg guygugub ughghoj";
+// console.log(string.slice(-2, -1));
+
+// №13 Даны два целых числа. Проверьте, что первое число без остатка делится на второе.
+
+// const numFirst = 6;
+// const numSecond = 36;
+
+// if (numSecond % numFirst === 0) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
