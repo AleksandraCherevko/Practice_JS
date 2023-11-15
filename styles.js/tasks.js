@@ -132,7 +132,3 @@
 
 let min = 1;
 let max = 100;
-
-for (let i = min; i <= max; i++) {
-  console.log(i);
-}
