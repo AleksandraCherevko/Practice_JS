@@ -112,3 +112,27 @@
 // }
 
 // №14 Выведите в консоль все целые числа от 1 до 100.
+
+// let min = 1;
+// let max = 100;
+
+// for (let i = min; i < max; i++) {
+//   console.log(i);
+// }
+
+//  №14 Выведите в консоль все целые числа от -100 до 0.
+
+// let min = -100;
+// let max = 0;
+// for (let i = min; i <= max; i++) {
+//   console.log(i);
+// }
+
+//  №15 Выведите в консоль все целые числа от 100 до 1.
+
+let min = 1;
+let max = 100;
+
+for (let i = min; i <= max; i++) {
+  console.log(i);
+}
