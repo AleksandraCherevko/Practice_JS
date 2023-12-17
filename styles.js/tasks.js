@@ -205,5 +205,8 @@
 
 //  №14 Дана некоторая строка. Переберите и выведите в консоль по очереди все символы с конца строки.
 
-const string = "uhduwhdhwjj";
-console.log(string.substring(11, 0));
+// const string = "uhduwhdhwjj";
+// const newArray = string.substring(1, 11);
+// console.log(newArray);
+
+//  №15 Дан массив с числами. Найдите сумму квадратов элементов этого массива.
