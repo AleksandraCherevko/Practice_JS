@@ -87,3 +87,49 @@
 
 // const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2);
 // console.log(r2);
+
+//пополняли счет/ есть условие и мы передаем в колбек сообщения на сексес и еррор
+// const TRANSACTION_LIMIT = 1000;
+
+// const account = {
+//   firstname: "Andrii",
+//   lastname: "Shevchuk",
+//   balance: 618,
+//   withdraw(amount, onSuccess, onError) {
+//     if (amount > TRANSACTION_LIMIT || amount > this.balance) {
+//       onError(`Вы не можете снять сумму ${amount}, баланс - ${this.balance}`);
+//       return;
+//     }
+//     this.balance -= amount;
+
+//     onSuccess(
+//       `Операция снятия на суму ${amount} прошла успешно, баланс - ${this.balance}`
+//     );
+//   },
+
+//   deposit(amount, onSuccess, onError) {
+//     if (amount > TRANSACTION_LIMIT || amount <= 0) {
+//       onError(
+//         `Вы не можете пополнить сумму ${amount}, баланс - ${this.balance}`
+//       );
+//       return;
+//     }
+//     this.balance += amount;
+
+//     onSuccess(
+//       `Операция пополнения на суму ${amount} прошла успешно, баланс - ${this.balance}`
+//     );
+//   },
+// };
+
+// function handleSuccess(message) {
+//   console.log(`Success! ${message}`);
+// }
+// function handleError(message) {
+//   console.log(`Error! ${message}`);
+// }
+
+// account.withdraw(400, handleSuccess, handleError);
+// account.withdraw(1400, handleSuccess, handleError);
+// account.deposit(1400, handleSuccess, handleError);
+// account.deposit(600, handleSuccess, handleError);
