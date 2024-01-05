@@ -1,5 +1,12 @@
 // Задача 1/48
-function add(a, b, c) {
-  return a + b + c;
-}
-console.log(add(15, 27, 10));
+// function makeMessage(name, price) {
+//   return `You picked ${name}, price per item is ${price} credits`;
+// }
+
+// console.log(makeMessage("Radar", 6150));
+
+// function calculateTotalPrice(orderedQuantity, pricePerItem) {
+//   return orderedQuantity * pricePerItem;
+// }
+
+// console.log(calculateTotalPrice(5, 100));
