@@ -143,7 +143,9 @@
 // console.log(getFileName("app.js"));
 // console.log(getFileName("index"));
 
-function createFileName(name, ext) {}
+function createFileName(name, ext) {
+  return `${name.trim()}.${ext.trim()}`;
+}
 
 console.log(createFileName(" order ", "txt"));
 console.log(createFileName("report ", "csv"));
