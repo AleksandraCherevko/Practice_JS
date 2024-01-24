@@ -143,9 +143,67 @@
 // console.log(getFileName("app.js"));
 // console.log(getFileName("index"));
 
-function createFileName(name, ext) {
-  return `${name.trim()}.${ext.trim()}`;
+// function createFileName(name, ext) {
+//   return `${name.trim()}.${ext.trim()}`;
+// }
+
+// console.log(createFileName(" order ", "txt"));
+// console.log(createFileName("report ", "csv"));
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter <= maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+// function calculateTotal(number) {
+//   while (number <= number.length) {
+//     console.log(calculateTotal());
+//     calculateTotal += number;
+//   }
+// }
+
+// console.log(calculateTotal(1));
+
+// checkStorage(["apple", "plum", "pear"], "plum");
+// checkStorage(["apple", "plum", "pear"], "pLuM");
+
+// function getCommonElements(array1, array2) {
+//   let newArray = [];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       newArray.push(array1[i]);
+//     }
+//   }
+//   return newArray;
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]);
+
+function checkStorage(storage, item) {
+  let newMessage;
+
+  for (let i = 0; i <= item.length; i += 1) {
+    if (item.includes(storage[i])) {
+      console.log(`${item} is available to order!`);
+    } else {
+      console.log(`Sorry! We are out of stock!`);
+    }
+  }
+
+  return newMessage;
 }
 
-console.log(createFileName(" order ", "txt"));
-console.log(createFileName("report ", "csv"));
+console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
+
+// for (let i = 0; i < storage; i += 1) {
+//     if (item.includes("storage[i]")) {
+//       message.push("${item} is available to order!");
+//     } else {
+//       console.log("Sorry! We are out of stock!");
+//     }
+//   }
