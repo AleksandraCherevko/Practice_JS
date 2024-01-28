@@ -182,23 +182,23 @@
 
 // getCommonElements([1, 2, 3], [2, 4]);
 
-function checkStorage(storage, item) {
-  let newMessage;
+// function checkStorage(storage, item) {
+//   let newMessage;
 
-  for (let i = 0; i <= item.length; i += 1) {
-    if (item.includes(storage[i])) {
-      console.log(`${item} is available to order!`);
-    } else {
-      console.log(`Sorry! We are out of stock!`);
-    }
-  }
+//   for (let i = 0; i <= item.length; i += 1) {
+//     if (item.includes(storage[i])) {
+//       console.log(`${item} is available to order!`);
+//     } else {
+//       console.log(`Sorry! We are out of stock!`);
+//     }
+//   }
 
-  return newMessage;
-}
+//   return newMessage;
+// }
 
-console.log(checkStorage(["apple", "plum", "pear"], "plum"));
-console.log(checkStorage(["apple", "plum", "pear"], "orange"));
-console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
 
 // for (let i = 0; i < storage; i += 1) {
 //     if (item.includes("storage[i]")) {

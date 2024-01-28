@@ -291,7 +291,6 @@
 // и рассчитывает общую сумму его элементов.Общая сумма элементов должна сохраняться в переменной total,
 //  которая возвращается, как результат работы функции.
 
-
 // function calculateTotalPrice(order) {
 //     let total = 0;
 //  for (i = 0; i< order.length; i+=1){
@@ -299,14 +298,12 @@
 //  }
 //     return total;
 //   }
-  
+
 //   console.log(calculateTotalPrice([12, 85, 37, 4]));
 //   console.log(calculateTotalPrice([164, 48, 291]));
 
-
-
 // Задача 21/32
-// Напиши функцию findLongestWord(string) которая принимает 
+// Напиши функцию findLongestWord(string) которая принимает
 // произвольную строку состоящую только из слов разделённых пробелом (параметр string) и возвращает самое длинное слово в этой строке.
 
 // function findLongestWord(string) {
@@ -319,13 +316,12 @@
 //             longestWord = word;
 //         }
 //     }
-    
+
 //     return longestWord;
 //   }
 
 //   console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 //   console.log(findLongestWord("Google do a roll"));
-
 
 // Задача 22/32
 // Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала массив всех целых чисел от значения min до max.
@@ -341,11 +337,10 @@
 //   }
 
 //   console.log(createArrayOfNumbers(29, 34));
-  
-// Задача 23/32
-// Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив, 
-// в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
 
+// Задача 23/32
+// Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив,
+// в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
 
 // function filterArray(numbers, value) {
 // const numbersArray = [ ];
@@ -356,14 +351,13 @@
 
 //     }
 // }
- 
+
 // return numbersArray;
 
 //  }
 //  console.log(filterArray([1, 2, 3, 4, 5], 3));
 //  console.log(filterArray([1, 2, 3, 4, 5], 4));
 //  console.log(filterArray([12, 24, 8, 41, 76], 38));
-
 
 // Задача 24/32
 // Функция checkFruit(fruit) принимает строку с названием фрукта (параметр fruit), и проверяет есть ли такой фрукт в массиве fruits.
@@ -377,9 +371,7 @@
 //     const fruits = ["apple", "plum", "pear", "orange"];
 //     return fruits.includes(fruit);
 
-
 //   }
-  
 
 //   console.log(checkFruit("mandarin"));
 //   console.log(checkFruit("plum"));
@@ -387,10 +379,10 @@
 // Задача 25/32
 // Общими элементами массивов называют те элементы, которые присутствуют во всех массивах.
 
-// Например, в двух массивах [1, 3, 5] и [0, 8, 5, 3] общими будут числа 3 и 5, т.к. они присутствуют в обоих исходных массивах. 
+// Например, в двух массивах [1, 3, 5] и [0, 8, 5, 3] общими будут числа 3 и 5, т.к. они присутствуют в обоих исходных массивах.
 // А числа 0, 1 и 8 присутствуют только в одном из массивов.
 
-// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины 
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины
 // в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
 
 // function getCommonElements(array1, array2) {
@@ -403,8 +395,6 @@
 //   }
 //   return newArray;
 //   }
-
-
 
 //   console.log(getCommonElements([1, 2, 3], [2, 4]));
 //   console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
@@ -419,10 +409,8 @@
 //     total += order[i];
 //   }
 
-
 //   return total;
 // }
-
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -454,7 +442,6 @@
 
 // }
 
-
 // function filterArray(numbers, value){
 //   const filteredNumbers = [ ];
 
@@ -478,7 +465,6 @@
 // const b = 4 % 3;
 // console.log(b);
 
-
 // const c = 11 % 4;
 // console.log(c);
 
@@ -489,7 +475,7 @@
 // console.log(e);
 
 // Задача 29/32
-// Напиши функцию getEvenNumbers(start, end) 
+// Напиши функцию getEvenNumbers(start, end)
 // которая возвращает массив всех чётных чисел от start до end.
 //  Чётным считается число которое делится на 2 без остатка (10 % 2 === 0).
 
@@ -509,7 +495,6 @@
 //  console.log(getEvenNumbers(2, 5));
 //  console.log(getEvenNumbers(6, 12));
 
-
 // Задача 30/32
 // Дополни код так, чтобы в переменную number записывалось первое число от start до end, которое делится на 5 без остатка.
 
@@ -523,7 +508,6 @@
 //     break;
 //   }
 // }
-
 
 // console.log(number);
 
@@ -560,13 +544,11 @@
 //   }
 //   }
 
-
 // console.log(findNumber(2, 6, 5));
 // console.log(findNumber(8, 17, 3));
 
-
 // Задача 32/32
-// Напиши функцию includes(array, value), которая делает тоже самое, что и метод массива массив.includes(значение) - 
+// Напиши функцию includes(array, value), которая делает тоже самое, что и метод массива массив.includes(значение) -
 // проверяет, есть ли в массиве array значение value, возвращая true если есть и false в противном случае.
 
 // При выполнении этой задачи в теле функции includes() нельзя использовать метод массив.includes(значение).
@@ -577,12 +559,22 @@
 //   if (item === value) {
 //     return true;
 //   }
-// } 
+// }
 
 //   return false
 
 // }
 
-
 // console.log(includes([1, 2, 3, 4, 5], 17));
 // console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+
+function checkStorage(storage, item) {
+  let newMessage = [];
+  for (let i = 0; i < storage; i += i) {
+    if (storage.includes("item")) {
+      newMessage.push(`<item> is available to order!`);
+    }
+  }
+}
+
+console.log(checkStorage(["apple", "plum", "pear"], "plum"));
