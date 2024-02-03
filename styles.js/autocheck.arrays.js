@@ -568,13 +568,13 @@
 // console.log(includes([1, 2, 3, 4, 5], 17));
 // console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
 
-function checkStorage(storage, item) {
-  let newMessage = [];
-  for (let i = 0; i < storage; i += i) {
-    if (storage.includes("item")) {
-      newMessage.push(`<item> is available to order!`);
-    }
-  }
-}
+// function checkStorage(storage, item) {
+//   let newMessage = [];
+//   for (let i = 0; i < storage; i += i) {
+//     if (storage.includes("item")) {
+//       newMessage.push(`<item> is available to order!`);
+//     }
+//   }
+// }
 
-console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
