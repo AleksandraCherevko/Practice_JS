@@ -371,5 +371,9 @@ const tweets = [
   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 ];
 
-const newArray = tweets.flatMap((tweet) => tweet.tags);
-console.log(newArray);
+function newArray(array) {
+  return array.filter((i) => {
+    return i.likes > 3;
+  });
+}
+console.log(newArray(tweets));
