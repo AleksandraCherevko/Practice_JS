@@ -343,4 +343,22 @@
 
 // console.log(updateValue.getPrice());
 
+///**
+// *? Напишіть функцію, яка приймає массив об'єктів і повертає новий массив
+// *? Зробіть знижку 20 % на всі фрукти у масиві
+// *? Надайте ід для кожного продукту
+// */
 
+const fruits = [
+  { name: "apple", price: 200 },
+  { name: "orange", price: 300 },
+  { name: "grapes", price: 750 },
+];
+
+function updateFruits(array) {
+  return array.map((fruit) => {
+    return { ...fruit, price: fruit.price * 0.8 };
+  });
+}
+
+console.log(updateFruits(fruits));
