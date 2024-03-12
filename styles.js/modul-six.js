@@ -363,17 +363,30 @@
 
 // console.log(updateFruits(fruits));
 
-const tweets = [
-  { id: "000", likes: 5, tags: ["js", "nodejs"] },
-  { id: "001", likes: 2, tags: ["html", "css"] },
-  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
-  { id: "003", likes: 8, tags: ["css", "react"] },
-  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
-];
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
 
-function newArray(array) {
-  return array.filter((i) => {
-    return i.likes > 3;
-  });
-}
-console.log(newArray(tweets));
+// function newArray(array) {
+//   return array.filter((i) => {
+//     return i.likes > 3;
+//   });
+// }
+// console.log(newArray(tweets));
+
+/*Напишіть функцію checkBrackets(str) яка приймає рядок жс коду (someFn)
+  і перевіряє правильність закриття дужок () {} []
+  Якщо рядок містить коректний код функція повертає true.
+  В іншому випадку повертає false
+*/
+
+const someFn = `function foo() {
+    const arr = [1, 2, 3];
+    console.log(arr);
+  }`;
+
+console.log(checkBrackets(someFn));
