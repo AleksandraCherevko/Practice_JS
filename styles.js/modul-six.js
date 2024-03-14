@@ -384,9 +384,9 @@
   В іншому випадку повертає false
 */
 
-const someFn = `function foo() {
-    const arr = [1, 2, 3];
-    console.log(arr);
-  }`;
+// const someFn = `function foo() {
+//     const arr = [1, 2, 3];
+//     console.log(arr);
+//   }`;
 
-console.log(checkBrackets(someFn));
+// console.log(checkBrackets(someFn));
