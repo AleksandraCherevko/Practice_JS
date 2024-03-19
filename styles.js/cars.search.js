@@ -93,4 +93,31 @@ function handleSubmit(event) {
   event.preventDefault();
 
   const { options, query } = event.target.elements;
+
+  // как достукиваемся до options.value
+  // cars[0] = получаем объект машины (0 = индекс массива)
+  // если я не знаю, какое свойство ищу в options, то я к ней обращаюсь через квадратные дужки и вызываю options
+  // *console.log(cars[0][options]);
+  // а если в options - не переменная, а объект, то, чтообы получить нам свойство = options.value
+  // {
+  //   id: 6,
+  //   car: "Volvo",
+  //   type: "XC60",
+  //   price: 7000,
+  //   img: "https://www.volvocars.com/media/shared-assets/master/images/pages/my19/xc60-my19/accessories/xc60my19_accessories_exteriorfeature2_1.jpg?w=320",
+  // }
+  //
+
+  // создаем переменную , добавляем массив cars и проходим по нему filter -
+  // в car лежит каждый объект отдельно /
+  // мы хотим посмотреть на каждое из свойств (то есть которое сохр в options value, приводим к нижнему регистру, проверяем через
+  // includes включает ли каждый рядок то, что ввел пользователь
+
+  const result = cars
+    .filter((car) =>
+      car[options.value].toLowerCase().includes(query.value.toLowerCase())
+    )
+    .sort((a, b) => a[options.value].localeCompare(b[options.value]));
+
+  container.innerHTML = createMarkup(result);
 }
